@@ -1,84 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Website</title>
     <script src="travel_recommendation.js"></script>
+    <link rel="stylesheet" href="travel_recommendation.css">
 </head>
 
-<style type="text/css">
-    *{      color: white;
-            padding: 0;
-            margin: 0;
-            }
-    
-    nav{   display: flex;
-            
-            width: auto;
-            
-            background-color: #00c785;
-            }
 
-    nav ul {list-style-type: none;
-            display: flex;
-            margin: auto;
-
-            }
-
-    ul li{  margin: 0px 30px;}
-    
-    ul li a {text-decoration:none;
-            }
-
-    .search{ padding: 20px 0px;
-            color: black;}
-
-    body{   background-image: url('city.jpg');
-            background-size: cover;
-            padding: 0;}
-
-    h1{     margin: 10px 10px;
-            }
-    
-    .title{ text-shadow: 10px 10px 12px #a33c3c;
-            font-size: 3.5em;
-            margin-top: 15vh;
-            margin-left: 10vw;
-            width: 50vw;
-            }
-
-    .sample_para{ 
-            width: 60vw;
-            text-align:justify;
-            font-size: 2em;
-            margin-left: 10vw;
-            color: black;
-            }
-
-</style>
 
 <nav>
     <h1>Travel Website</h1>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About US</a></li>
-        <li><a href="#">Contact US</a></li>
+        <li><a onclick="showhome()">Home</a></li>
+        <li><a onclick="showabout()">About US</a></li>
+        <li><a onclick="showcontact()">Contact US</a></li>
     </ul>
 
     <div class="search">
-        <input type="search" placeholder="Search here!"><img src="/home/project/magnifying-glass.png" alt="">
-        <input type="submit">
-        <input type="reset">
+        <input type="search" placeholder="Search here!" id="search_val">
+        <input type="submit" onclick="search_func()">
+        <input type="reset" onclick="reset()">
+
+        <div id="search_res_container">
+            <div class="search_res" id="search_content1">
+                <img src="" alt="" id="res_img1">
+                <h3 id="res_title1"></h3>
+                <p id="res_para1"></p>
+            </div>
+            <div class="search_res" id="search_content2">
+                <img src="" alt="" id="res_img2">
+                <h3 id="res_title2"></h3>
+                <p id="res_para2"></p>
+            </div>
+        </div>
 
     </div>
 </nav>
 
 <body>
-   
-    <h1 class="title">EXPLORE DREAM DESTINATION</h1>
-    <p class="sample_para">
-        Explore the world with us! Whether you're dreaming of a tropical beach escape, a bustling city adventure, or a quiet mountain retreat, our travel recommendations will guide you to the perfect destination. Let your journey begin with unforgettable experiences, handpicked tips, and personalized itineraries designed just for you.
-      </p>
+    <div class="hero" id="home">
+        <h1 class="title">EXPLORE DREAM DESTINATION</h1>
+        <br><br>
+        <p class="sample_para">
+            Explore the world with us! Whether you're dreaming of a tropical beach escape, a bustling city adventure, or
+            a quiet mountain retreat, our travel recommendations will guide you to the perfect destination. Let your
+            journey begin with unforgettable experiences, handpicked tips, and personalized itineraries designed just
+            for you.
+        </p>
+        <br><br><br>
+        <button id="booknow">Book Now!</button>
+        <div id="city"></div>
+    </div>
+
+
+    <div id="aboutus_container">
+        <div>
+            <h1 id="aboutustitle">ABOUT US</h1>
+            <p class="aboutus">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorum sunt omnis
+                soluta tempore alias itaque. Ut, architecto. Molestiae sed repellendus, quod perspiciatis ratione
+                sapiente nesciunt. Veniam perspiciatis natus ut!</p>
+            <br><br><br><br><br><br>
+
+
+            <div class="ourteam">
+                <div class="team_member" id="team-title">Our Team</div>
+                <div class="team_member">
+                    <h3>John Doe</h3>
+                    <p>John is responsible for....</p>
+                    <button>CEO</button>
+                </div>
+                <div class="team_member">
+                    <h3>Celina Thomas</h3>
+                    <p>Celina is responsible for....</p>
+                    <button>Team Lead</button>
+                </div>
+                <div class="team_member">
+                    <h3>Mike Tysen</h3>
+                    <p>Mike is responsible for....</p>
+                    <button>Delivery Head</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="social_container">
+        <ul>
+            <li><img src="facebook.png" alt=""></li>
+            <li><img src="twitter.png" alt=""></li>
+            <li><img src="instagram.png" alt=""></li>
+            <li><img src="youtube.png" alt=""></li>
+        </ul>
+    </div>
+    <br><br><br>
+
+
+
+    <div id="contactus_container">
+        <div class="contactus_div">
+            <h1 id="contacustitle">CONTACT US</h1>
+            
+        </div>
+        
+        
+       
+        <div class="form">
+            <form action="#">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <input type="text" id="message" name="message"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+    </div>
+
+
+    <br><br><br><br><br><br><br>
 </body>
+
 </html>

@@ -1,0 +1,270 @@
+* {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+input {
+    color: black;
+}
+
+
+nav {
+    display: flex;
+    width: auto;
+    background-color: #673AB7;
+    font-weight: bold;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+
+}
+
+ul li {
+    margin: 0px 30px;
+
+}
+
+ul li a {
+    text-decoration: none;
+
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.search {
+    padding: 17px 10px;
+    color: black;
+}
+
+.search input[type="search"] {
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 5px 15px;
+}
+
+.search input[type="submit"],
+input[type="reset"] {
+    background-color: #9f91f7;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #5a009d;
+}
+
+
+#search_res_container{
+            margin-top: 30px;
+            
+            width: 37vw;
+            height: 85vh;
+            border: 1px solid white;
+            background: linear-gradient(180deg, #4b6cb7 0%, #182848 100%);
+            position: absolute;
+            right:10px;
+            border-radius: 10px;
+            display: none;
+            font-family:'Courier New', Courier, monospace;
+            }
+
+.search_res{    height: 45%;
+                padding: 10px;
+                text-align: justify;
+               
+                margin-top: 15px;}
+
+
+.search_res img{width: 99%;
+                border-radius: 5px;
+                border: 1px solid white;
+                }
+
+
+
+body {
+    background-image: url('city.jpg');
+    background-size: cover;
+    padding: 0;
+}
+
+
+
+.hero {
+    margin-top: 15vh;
+    margin-left: 10vw;
+    width: 50vw;
+    text-align: justify;
+    color: white;
+}
+
+.title {
+    text-shadow: 7px 6px 7px #37059d;
+    font-size: 3.5em;
+    text-align: left;
+    padding: 0;
+
+}
+
+.sample_para {
+    font-size: 1.5em;
+}
+
+
+#booknow {
+    background-color: #3723b9;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+#booknow:hover {
+    transform: scale(1.08);
+}
+
+
+.social_container {
+    position: absolute;
+    top: 450px;
+    width: 20px;
+
+}
+
+.social_container ul li {
+    list-style: none;
+    margin: 24px 15px;
+}
+
+.social_container img {
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+    transition-duration: .5s;
+}
+
+.social_container img:hover {
+    transform: scale(1.1);
+}
+
+#aboutus_container {
+    margin-top: 15vh;
+    margin-left: 10vw;
+    width: 80vw;
+    text-align: justify;
+    color: white;
+    display: none;
+}
+
+#aboutustitle {
+    font-size: 5em;
+    padding: 0;
+}
+
+.aboutus {
+    font-size: 1.5em;
+}
+
+.ourteam {
+    display: flex;
+    width: 90%;
+
+    float: right;
+}
+
+#team-title {
+    font-size: 3em;
+    font-weight: bold;
+    background-color: rgb(150 150 150 / 0%) !important;
+}
+
+.team_member {
+    padding: 10px;
+    width: 20%;
+    margin: auto;
+    background-color: rgb(150 150 150 / 40%);
+}
+
+.ourteam button {
+    color: black;
+
+}
+
+#contactus_container {
+    margin-top: 20vh;
+    width: 80vw;
+    float: right;
+    text-align: justify;
+    color: white;
+    display: flex;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none;
+
+}
+
+.contactus_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    font-size: 1.3em;
+}
+
+.form {
+    width: 60%;
+    background-color: rgb(150 150 150 / 19%);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.form input {
+    background-color: rgb(150 150 150 / 19%);
+    border: 0.5px solid white;
+    border-radius: 3px;
+    color: white;
+    width: 90%;
+    height: 20px;
+}
+
+.form input[type="submit"] {
+    background-color: #3723b9;
+    height: 3vh;
+    width: 90%;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#message {
+    height: 60px;
+}
